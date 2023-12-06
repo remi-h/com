@@ -33,7 +33,7 @@ export default function HbdOskar() {
                                     <p className='py-1'>FIKA TICKET #{ticket.id}</p>
                                     <p className='text-sm'>DATE: {ticket.date}</p>
                                     <p className='text-sm'>PLACE: {ticket.place}</p>
-                                    <Button isDisabled="true" radius="none" size='sm' className='w-full my-2 border-1 bg-transparent border-black text-sm py-1'>USED</Button>
+                                    <Button isDisabled={true} radius="none" size='sm' className='w-full my-2 border-1 bg-transparent border-black text-sm py-1'>USED</Button>
                                 </div>
                             </div>
                         ) : (
