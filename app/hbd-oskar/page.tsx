@@ -38,7 +38,7 @@ export default function HbdOskar() {
                                     <p className='py-1'>FIKA TICKET #{ticket.id}</p>
                                     <p className='text-sm'>DATE: {ticket.date}</p>
                                     <p className='text-sm'>PLACE: {ticket.place}</p>
-                                    <button className='w-full my-2 border-1 border-black text-sm py-1 px-6 hover:bg-black hover:text-white duration-200'>LET'S HAVE FIKA → </button>
+                                    <button className='w-full my-2 border-1 border-black text-sm py-1 px-6 hover:bg-black hover:text-white duration-200'>LET&apos;S HAVE FIKA → </button>
                                 </div>
                             </div>
                         )}
