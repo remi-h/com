@@ -6,6 +6,12 @@ export default function Header() {
       <Link href="/">
         <h1 className="text-2xl font-semibold	">REMI HIGUCHI</h1>
       </Link>
+      {/* <Link href="/about">
+        <h1 className="">About</h1>
+      </Link> */}
+      <Link href="/forfriends">
+        <h1 className="">For Friends</h1>
+      </Link>
     </div>
   )
 }
