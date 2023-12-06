@@ -52,7 +52,7 @@ export default function HbdOskar() {
                                                     </ModalBody>
                                                     <ModalFooter>
                                                         <Button onPress={onClose}>
-                                                            OK, I'll text
+                                                            OK, I will text
                                                         </Button>
                                                     </ModalFooter>
                                                 </>
