@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { Button } from "@nextui-org/react";
 
 export const metadata: Metadata = {
-    title: 'For Frends | REMI HIGUCHI',
+    title: 'For Friends | REMI HIGUCHI',
     description: 'for my friends',
     robots: {
         index: false,
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
 export default function Forfriends() {
     return (
         <main>
-            <h1 className="text-3xl">HELLO MY FRIENDS</h1>
+            <h1 className="text-3xl">FOR MY FRIENDS</h1>
             <p>This page is for my friends. (Not Indexed)</p>
             <Link href="forfriends/hbd-oskar">
                 <Button radius="none" size='sm' className='my-2 border-1 bg-transparent border-black text-sm py-1 hover:bg-black hover:text-white duration-200'>

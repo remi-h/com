@@ -10,8 +10,9 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <main className="">
-      <h1>Hello World</h1>
-      <p>UNDER CONSTRUCTION, PLEASE COME BACK LATER</p>
+      <h1 className='text-3xl'>Hi! I'm Remi</h1>
+      <p>TOKYO ⇔ STOCKHOLM</p>
+      <p>I enjoy software engineering and product design.</p>
     </main>
   )
 }
