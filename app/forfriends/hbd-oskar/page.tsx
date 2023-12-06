@@ -1,13 +1,5 @@
 import React from 'react';
-import {
-    Modal,
-    ModalContent,
-    ModalHeader,
-    ModalBody,
-    ModalFooter,
-    Button,
-    useDisclosure,
-} from "@nextui-org/react";
+import {Card, CardBody} from "@nextui-org/react";
 
 import type { Metadata } from 'next';
 
@@ -17,7 +9,6 @@ export const metadata: Metadata = {
 }
 
 export default function HbdOskar() {
-    const { isOpen, onOpen, onOpenChange } = useDisclosure();
 
     const tickets = [
         { id: 0, used: true, date: '23-10-21', place: '!!EXAMPLE!!' },
@@ -49,33 +40,9 @@ export default function HbdOskar() {
                                     <p className='py-1'>FIKA TICKET #{ticket.id}</p>
                                     <p className='text-sm'>DATE: {ticket.date}</p>
                                     <p className='text-sm'>PLACE: {ticket.place}</p>
-                                    <Button onClick={onOpen} className='w-full my-2 border-1 border-black text-sm py-1 px-6 hover:bg-black hover:text-white duration-200'>
+                                    <button className='w-full my-2 border-1 border-black text-sm py-1 px-6 hover:bg-black hover:text-white duration-200'>
                                         LET&apos;S HAVE FIKA →
-                                    </Button>
-                                    <Modal isOpen={isOpen} onOpenChange={onOpenChange}>
-                                        <ModalContent>
-                                            {(onClose) => (
-                                                <>
-                                                    <ModalHeader className="flex flex-col gap-1">Modal Title</ModalHeader>
-                                                    <ModalBody>
-                                                        <p>
-                                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                                            Nullam pulvinar risus non risus hendrerit venenatis.
-                                                            Pellentesque sit amet hendrerit risus, sed porttitor quam.
-                                                        </p>
-                                                    </ModalBody>
-                                                    <ModalFooter>
-                                                        <Button color="danger" variant="light" onPress={onClose}>
-                                                            Close
-                                                        </Button>
-                                                        <Button color="primary" onPress={onClose}>
-                                                            Action
-                                                        </Button>
-                                                    </ModalFooter>
-                                                </>
-                                            )}
-                                        </ModalContent>
-                                    </Modal>
+                                    </button>
                                 </div>
                             </div>
                         )}
