@@ -15,20 +15,3 @@ bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-## INSIDE REMIHIGUCHI.COM
-```
-.
-├── README.md
-├── app
-├── components
-├── next-env.d.ts
-├── next.config.js
-├── node_modules
-├── package-lock.json
-├── package.json
-├── postcss.config.js
-├── public
-├── tailwind.config.ts
-└── tsconfig.json
-```

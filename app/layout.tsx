@@ -3,6 +3,7 @@ import * as React from "react";
 import { Inter } from 'next/font/google'
 import './globals.css'
 import Header from '@/components/Header'
+import Footer from '@/components/Footer'
 import { NextUIProvider } from "@nextui-org/react";
 import {Providers} from "./providers";
 
@@ -27,6 +28,7 @@ export default function RootLayout({
           <section>
             {children}
           </section>
+          <Footer />
         </Providers>
       </body>
     </html>

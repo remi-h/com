@@ -8,7 +8,6 @@ import {
 export default function Header() {
   return (
     <header>
-      <div className="text-center bg-red-500 text-white font-bold">UNDER CONSTRUCTION, some elements may not work</div>
       <div className="flex items-center justify-between p-4 border-b-2">
         <Link href="/">
           <h1 className="text-2xl font-semibold	">REMI HIGUCHI</h1>
