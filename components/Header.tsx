@@ -14,7 +14,7 @@ export default function Header() {
           <h1 className="text-2xl font-semibold	">REMI HIGUCHI</h1>
         </Link>
         <div id="navi" className="flex gap-4 items-center">
-          <Link href="/about">
+          <Link href="/log">
             <span className="">LOG</span>
           </Link>
           <Dropdown
@@ -49,10 +49,10 @@ export default function Header() {
                 ],
               }}
             >
-              <DropdownItem description="Account Needed" key="friends" href="/forfriends" className="hover:bg-neutral-100">
+              <DropdownItem description="Account Needed" key="friends" href="/forfriends" >
                 For Friends
               </DropdownItem>
-              <DropdownItem description="Digital Business Card" key="about" href="/card">
+              <DropdownItem description="Digital Business Card" key="about" href="/digitalcard">
                 Card
               </DropdownItem>
             </DropdownMenu>
