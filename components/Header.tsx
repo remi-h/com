@@ -1,5 +1,6 @@
 import Link from "next/link"
-import * as DropdownMenu from '@radix-ui/react-dropdown-menu';
+// import * as DropdownMenu from '@radix-ui/react-dropdown-menu';
+import { Dropdown, DropdownMenu, DropdownTrigger, DropdownItem, Button } from "@nextui-org/react";
 import {
   PlusIcon,
 } from '@radix-ui/react-icons';
@@ -7,43 +8,55 @@ import {
 export default function Header() {
   return (
     <header>
-      <div className="text-center bg-red-500 text-white font-bold">UNDER CONSTRUCTION, elements may not work</div>
+      <div className="text-center bg-red-500 text-white font-bold">UNDER CONSTRUCTION, some elements may not work</div>
       <div className="flex items-center justify-between p-4 border-b-2">
         <Link href="/">
           <h1 className="text-2xl font-semibold	">REMI HIGUCHI</h1>
         </Link>
-        <div id="navi" className="flex gap-4">
+        <div id="navi" className="flex gap-4 items-center">
           <Link href="/about">
             <span className="">LOG</span>
           </Link>
-          <DropdownMenu.Root>
-            <DropdownMenu.Trigger asChild>
-              <button className="border-1 border-black p-1 inline-flex items-center justify-center">
-                <PlusIcon className="lg" />
-              </button>
-            </DropdownMenu.Trigger>
-
-            <DropdownMenu.Portal>
-              <DropdownMenu.Content
-                className="bg-white border-1 border-black"
-                sideOffset={5}
-                align="end"
+          <Dropdown
+            classNames={{
+              content: "p-0 rounded-none border border-black",
+            }}
+          >
+            <DropdownTrigger>
+              <Button
+                variant="bordered"
+                size="sm"
+                radius="full"
+                isIconOnly
+                className="border-1 border-black"
               >
-                <DropdownMenu.Item className="px-3 py-2 hover:bg-neutral-100" >
-                  <Link href="/forfriends">
-                    <span className="">For Friends</span>
-                  </Link>
-                </DropdownMenu.Item>
-                <DropdownMenu.Item className="px-3 py-2 hover:bg-neutral-100">
-                  <Link href="/about">
-                    <span className="">About</span>
-                  </Link>
-                </DropdownMenu.Item>
-
-              </DropdownMenu.Content>
-            </DropdownMenu.Portal>
-          </DropdownMenu.Root>
-
+                <PlusIcon className="md" />
+              </Button>
+            </DropdownTrigger>
+            <DropdownMenu
+              aria-label="Link Actions"
+              className="p-0"
+              radioGroup="navi"
+              itemClasses={{
+                base: [
+                  "rounded-none",
+                  "transition-opacity",
+                  "data-[hover=true]:bg-neutral-100",
+                ],
+                description: [
+                  "text-xs",
+                  "data-[hover=true]:text-neutral-200",
+                ],
+              }}
+            >
+              <DropdownItem description="Account Needed" key="friends" href="/forfriends" className="hover:bg-neutral-100">
+                For Friends
+              </DropdownItem>
+              <DropdownItem description="Digital Business Card" key="about" href="/card">
+                Card
+              </DropdownItem>
+            </DropdownMenu>
+          </Dropdown>
         </div>
       </div>
     </header>
