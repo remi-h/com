@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 
 export default function Forfriends() {
     return (
-        <main>
+        <main className='p-4'>
             <h1 className="text-3xl">FOR MY FRIENDS</h1>
             <p>This page is for my friends. (Not Indexed)</p>
             <Link href="forfriends/hbd-oskar">

@@ -24,7 +24,7 @@ export default function RootLayout({
       <body className={inter.variable + "font-inter"}>
         <Providers>
           <Header />
-          <section className="p-4">
+          <section>
             {children}
           </section>
         </Providers>

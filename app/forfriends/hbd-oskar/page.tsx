@@ -14,7 +14,7 @@ export default function HbdOskar() {
     // const { isOpen, onOpen } = useDisclosure();
 
     return (
-        <div className="">
+        <div className="p-4">
             <h1 className='text-3xl'>BIRTHDAY FIKA TICKETS FOR OSKAR!!!</h1>
             <div className='py-4 flex gap-2 flex-wrap'>
                 {tickets.map((ticket =>
