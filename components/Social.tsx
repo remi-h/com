@@ -28,7 +28,7 @@ export default function Social() {
                         </div>
                         <div className='p-2 group-hover:bg-neutral-100'>
                             <img src="/images/github-remi.jpeg" alt="Remi Higuchi" className='rounded-full w-14 m-1 border border-neutral-500' />
-                            <p className="font-semibold text-lg">Rémi</p>
+                            <p className="font-semibold text-lg">Remi</p>
                             <p className='text-xs'>Stockholm, Sweden<br />
                                 Keio University | KTH / CS - Class of 2023 </p>
                         </div>
