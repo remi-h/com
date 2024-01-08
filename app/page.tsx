@@ -1,57 +1,41 @@
-import Image from 'next/image'
-import Social from '@/components/Social'
+import Image from 'next/image';
 
-import type { Metadata } from 'next'
+import type { Metadata } from 'next';
 export const metadata: Metadata = {
-  title: 'REMI HIGUCHI',
-  description: 'welcome to remihiguchi.com',
-}
+  title: 'POL LOZANO Software Development',
+  description: 'Welcome to POL LOZANO Software Development',
+};
 
 export default function Home() {
   return (
-    <main className="flex justify-between px-4 py-2 gap-4 flex-wrap">
-      <div className='flex flex-col py-2 space-y-2 min-[832px]:w-[40%] w-full'>
-        <div className='relative h-40 min-[832px]:h-96'>
-          <Image
-            src="/images/stockholm.jpg"
-            fill
-            alt="Picture of Stockholm"
-            style={{ objectFit: "cover" }}
-          />
-        </div>
-        <div className='relative h-40 min-[832px]:h-96'>
-          <Image
-            src="/images/tokyo.jpg"
-            fill
-            alt="Picture of Tokyo"
-            style={{ objectFit: "cover" }}
-          />
-        </div>
-      </div>
-      <div className='flex flex-col py-2 gap-y-6 min-[832px]:w-[58%] w-full'>
-        <div className='flex flex-col gap-y-1'>
-          <h1 className='text-2xl'>Hi! I&apos;m Remi</h1>
-          <p>TOKYO ⇔ STOCKHOLM</p>
-        </div>
-        <div className='flex flex-col gap-6'>
-          <p className='text-sm'>
-            I was born and raised in Tokyo, Japan, but my family&apos;s extensive travels ignited my passion for studying and working abroad from an early age.
-            Having attended schools in diverse locations such as Japan, the Philippines, the UAE, and Sweden,
-            I cultivated a global perspective and an insatiable curiosity for different cultures and experiences.
+    <main className="px-4 py-8 bg-gray-100">
+      <h1 className='text-3xl font-bold text-gray-900'>
+        POL LOZANO Software Development
+      </h1>
+      <div className='flex'>
+        <Image src="/images/polpol.jpg" alt="POL" width={400} height={600} className='rounded-md' />
+
+        <div className="max-w-7xl mx-auto">
+          <p className="text-lg text-gray-600 mb-6">
+            With over five years of experience crafting exceptional mobile and web apps, I bring a wealth of expertise to the table, driven by a passion for creating user-centric experiences that resonate with users across diverse platforms. My unwavering commitment to quality and innovation has resulted in a portfolio of feature-rich, engaging applications that have garnered praise from clients and users alike.
           </p>
-          <p className='text-sm'>
-            I had always liked technology but my tech journey commenced at the age of 14 when I delved into programming,
-            leading me to enroll in a national tech high school to specialize in computer science. It was during my time at Keio University
-            that I unearthed my fervor for Human-Computer Interaction (HCI), realizing the immense potential and impact of this field.
+
+          <p className="text-gray-600 mb-6">
+          My technical prowess encompasses a deep understanding of React Native, Flutter, and Java, enabling me to seamlessly navigate the complexities of modern app development. I am abreast of the latest advancements in mobile and web development, ensuring that my creations are not only cutting-edge but also built to withstand the demands of today's technology-driven world. My ability to translate intricate ideas into intuitive and delightful user interfaces has consistently yielded apps that not only captivate users but also exceed their expectations.
           </p>
-          <p className='text-sm'>
-            Currently based in Stockholm, Sweden, I am fully immersed in my role as a tech trainee, specializing in HCI. Each day, I leverage
-            my skills and knowledge to contribute meaningfully to the development of innovative technological solutions that bridge the gap between humans and computers.
+
+          <p className="text-gray-600">
+          I am not merely a craftsman of interfaces; I am an artist who breathes life into digital experiences. My dedication to crafting visually appealing and user-friendly interfaces stems from a deep understanding of human behavior and the psychology of interaction. I am passionate about creating experiences that not only look great but also seamlessly enhance the user experience, guiding users through their journeys with ease and satisfaction.
           </p>
-          <h2>Overall, I enjoy software engineering and product design.</h2>
+          <div className='py-8'>
+            <a href="#" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+              Get in Touch
+            </a>
+          </div>
         </div>
-        <Social />
+
+
       </div>
     </main>
-  )
+  );
 }
