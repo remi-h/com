@@ -104,7 +104,7 @@ const LogPage = () => {
                 <p>---</p>
                 <div className="flex flex-wrap gap-1 items-baseline">
                   <span className='font-mono font-thin text-sm'>{log.date}</span>
-                  <span className=''>"{log.title}"</span>
+                  <span className=''>&quot;{log.title}&quot;</span>
                   <span className=''>- {log.media}. Available on</span>
                   <a href={log.link} target="_blank" className="break-all text-blue-900 underline hover:bg-indigo-950 hover:text-white">{log.link}</a>
                 </div>
