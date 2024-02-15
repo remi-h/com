@@ -47,11 +47,11 @@ export default function Header() {
                 ],
               }}
             >
+              <DropdownItem description="Film Photography" key="photo" href="/photo">
+                Photo
+              </DropdownItem>
               <DropdownItem description="Account Needed" key="friends" href="/forfriends" >
                 For Friends
-              </DropdownItem>
-              <DropdownItem description="Digital Business Card" key="about" href="/digitalcard">
-                Card
               </DropdownItem>
             </DropdownMenu>
           </Dropdown>

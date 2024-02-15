@@ -31,7 +31,7 @@ export default function Home() {
       <div className='flex flex-col py-2 gap-y-6 min-[832px]:w-[58%] w-full'>
         <div className='flex flex-col gap-y-1'>
           <h1 className='text-2xl'>Hi! I&apos;m Remi</h1>
-          <p>TOKYO ⇔ STOCKHOLM</p>
+          <p>TOKYO + STOCKHOLM</p>
         </div>
         <div className='flex flex-col gap-6'>
           <p className='text-sm'>

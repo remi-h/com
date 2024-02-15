@@ -22,15 +22,35 @@ export const metadata: Metadata = {
 }
 
 export default function Forfriends() {
+
+    const pages = [
+        {
+            id: 1,
+            name: 'OSKAR',
+            link: '/forfriends/hbd-oskar',
+        },
+        {
+            id: 2,
+            name: 'Trip Log',
+            link: '/forfriends/trip-log',
+        }
+    ]
+
     return (
         <main className='p-4'>
             <h1 className="text-3xl">FOR MY FRIENDS</h1>
             <p>This page is for my friends. (Not Indexed)</p>
-            <Link href="forfriends/hbd-oskar">
-                <Button radius="none" size='sm' className='my-2 border-1 bg-transparent border-black text-sm py-1 hover:bg-black hover:text-white duration-200'>
-                    Oskar
-                </Button>
-            </Link>
+            <div className='flex gap-1'>
+                {pages.map((page) => (
+                    <span key={page.id}>
+                        <Link href={page.link}>
+                            <Button radius="none" size='sm' className='my-2 border-1 bg-transparent border-black text-sm py-1 hover:bg-black hover:text-white duration-200'>
+                                {page.name}
+                            </Button>
+                        </Link>
+                    </span>
+                ))}
+            </div>
         </main>
     )
 }
