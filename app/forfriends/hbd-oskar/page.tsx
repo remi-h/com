@@ -5,7 +5,7 @@ import { Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDi
 export default function HbdOskar() {
 
     const tickets = [
-        { id: 1, used: false, date: 'XX-XX-XX', place: 'TBD' },
+        { id: 1, used: true, date: '24-03-08', place: 'chaikhana' },
         { id: 2, used: false, date: 'XX-XX-XX', place: 'TBD' },
         { id: 3, used: false, date: 'XX-XX-XX', place: 'TBD' },
         { id: 0, used: true, date: '23-10-21', place: '!!EXAMPLE!!' },
