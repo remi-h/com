@@ -74,19 +74,34 @@ const LogPage = () => {
       link: 'https://open.spotify.com/episode/1xbQhe5qok8Wmnm7LjL7e4'
     },
     {
-      id: 10,
+      id: 12,
       date: '29/01/2024',
       media: 'Spotify Podcast - Bias / バイアス',
       title: '多国籍と女性のボスは当たり前/大学院まで無料!スウェーデンの新卒キャリア事情【Remi後編】】',
       link: 'https://open.spotify.com/episode/1xbQhe5qok8Wmnm7LjL7e4'
     },
     {
-      id: 11,
+      id: 13,
       date: '15/02/2024',
       media: 'Portfolio',
       title: 'Updated Portfolio site + photo page, and log page',
       link: 'https://www.remihiguchi.com/'
-    }
+    },
+    {
+      id: 10,
+      media: 'Deruqui Community',
+      date: '10/01/2020',
+      title: 'Deruqui Interview 「樋口れみー平等な世の中に近づけたい」',
+      link: 'https://community.deruqui.com/students/remi_higuchi',
+    },
+    {
+      id: 11,
+      media: 'Embassy of Sweden',
+      date: '08/11/2021',
+      title: 'スウェーデン大使館×ヨンショーピング大学×ウプサラ大学×王立工科大学 オンライン留学説明会',
+      link: 'https://www.swedenabroad.se/ja/embassies/japan-tokyo/current/calendar/%E3%82%B9%E3%82%A6%E3%82%A7%E3%83%BC%E3%83%87%E3%83%B3%E7%95%99%E5%AD%A6%E8%AA%AC%E6%98%8E%E4%BC%9A/',
+    },
+    
   ];
 
   return (
