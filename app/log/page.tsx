@@ -67,25 +67,39 @@ const LogPage = () => {
       link: 'https://globaledu.jp/technovationchallenge2018/'
     },
     {
-      id: 9,
+      id: 10,
       date: '22/01/2024',
       media: 'Spotify Podcast - Bias / バイアス',
       title: 'スウェーデン留学から現地就職!?/H&M本社で働いて分かった”北欧流の働き方”【Remi前編】',
       link: 'https://open.spotify.com/episode/1xbQhe5qok8Wmnm7LjL7e4'
     },
     {
-      id: 10,
+      id: 11,
       date: '29/01/2024',
       media: 'Spotify Podcast - Bias / バイアス',
       title: '多国籍と女性のボスは当たり前/大学院まで無料!スウェーデンの新卒キャリア事情【Remi後編】】',
       link: 'https://open.spotify.com/episode/1xbQhe5qok8Wmnm7LjL7e4'
     },
     {
-      id: 11,
+      id: 12,
       date: '15/02/2024',
       media: 'Portfolio',
       title: 'Updated Portfolio site + photo page, and log page',
       link: 'https://www.remihiguchi.com/'
+    },
+    {
+      id: 9,
+      date: '08/11/2021',
+      media: 'スウェーデン大使館',
+      title: 'スウェーデン大使館×王立工科大学 オンライン留学説明会',
+      link: 'https://www.swedenabroad.se/ja/embassies/japan-tokyo/current/calendar/スウェーデン留学説明会'
+    },
+    {
+      id: 13,
+      date: '12/05/2024',
+      media: '白川寧々チャンネル - YouTube',
+      title: '【海外就職】スウェーデンH&Mテック新卒プログラムって何?どんな準備が必要?',
+      link: 'https://www.youtube.com/watch?v=_blKDb9do2g'
     }
   ];
 
