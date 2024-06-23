@@ -6,9 +6,8 @@ export default function HbdOskar() {
 
     const tickets = [
         { id: 1, used: true, date: '24-03-08', place: 'chaikhana' },
-        { id: 2, used: true, date: '24-5-16', place: 'Johan&Nyström' },
-        { id: 3, used: false, date: 'XX-XX-XX', place: 'TBD' },
-        { id: 0, used: true, date: '23-10-21', place: '!!EXAMPLE!!' },
+        { id: 2, used: true, date: '24-05-16', place: 'Johan&Nyström' },
+        { id: 3, used: true, date: '24-06-23', place: 'Johan&Nyström' },
     ]
     const {isOpen, onOpen, onOpenChange} = useDisclosure();
     // const { isOpen, onOpen } = useDisclosure();
