@@ -26,8 +26,8 @@ export default function Forfriends() {
     const pages = [
         {
             id: 1,
-            name: 'OSKAR',
-            link: '/forfriends/hbd-oskar',
+            name: 'HOTEL',
+            link: '/forfriends/hotel',
         },
         {
             id: 2,
